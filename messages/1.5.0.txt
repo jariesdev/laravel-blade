@@ -1,4 +1,4 @@
-Blade Highlighter for Laravel 5
+Slice Highlighter for CodeIgniter 5
 
 - Added -
 Raw echo {!! $name !!}.

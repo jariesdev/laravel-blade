@@ -1,1 +1,1 @@
-Blade Highlighter for Laravel 3
+Slice Highlighter for CodeIgniter 3

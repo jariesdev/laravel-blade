@@ -7,7 +7,7 @@ The current UNIX timestamp is {{ time() }}.
 {{ $name or 'Default' }}
 
 {{-- Displaying Raw Text With Curly Braces --}}
-@{{ This will not be processed by Blade }}
+@{{ This will not be processed by Slice }}
 
 {{-- Do not escape data --}}
 Hello, {!! $name !!}.
@@ -45,7 +45,7 @@ Hello, {{{ $name }}}.
 
 @include('footer')
 
-{{-- Define Blade Layout --}}
+{{-- Define Slice Layout --}}
 <html>
     <head>
         <title>
@@ -67,7 +67,7 @@ Hello, {{{ $name }}}.
     </body>
 </html>
 
-{{-- Use Blade Layout --}}
+{{-- Use Slice Layout --}}
 @extends('layouts.master')
 
 @section('sidebar')
@@ -147,8 +147,8 @@ This comment will not be in the rendered HTML
 This comment will not be in the rendered HTML
  --}}
 
-{{-- Blade Extensions Compatibility --}}
-{{-- https://github.com/RobinRadic/blade-extensions --}}
+{{-- Slice Extensions Compatibility --}}
+{{-- https://github.com/RobinRadic/slice-extensions --}}
 @foreach($stuff as $key => $val)
     {{ $loop->index }}       {{-- int, zero based --}}
     {{ $loop->index1 }}      {{-- int, starts at 1 --}}
@@ -240,7 +240,7 @@ This comment will not be in the rendered HTML
     <p>Paragraph</p>
 </div>
 
-@embed('blade-ext::dropdown', ['button' => true ])
+@embed('slice-ext::dropdown', ['button' => true ])
     @section('label', 'Choose')
     @section('items')
         @macro('item', 'Action')
@@ -393,14 +393,14 @@ This comment will not be in the rendered HTML
 @endswitch
 
 {{-- Complex conditional --}}
-@if(($x == true) && ($y == false)) 
+@if(($x == true) && ($y == false))
     <a>foo</a>
 @endif
 
 {{-- Single line if statement --}}
 @if($foo === true) <p>Text</p> @endif
 
-{{-- Quoted blade directive matching --}}
+{{-- Quoted slice directive matching --}}
 <p class="first-class @if($x==true) second-class @endif">Text</p>
 
 {{-- Complex conditional inline --}}

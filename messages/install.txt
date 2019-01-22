@@ -1,5 +1,5 @@
-Laravel Blade Highlighter
+CodeIgniter Slice Highlighter
 
-This package adds syntax definitions for the Laravel 4 & 5 Blade engine.
+This package adds syntax definitions for the CodeIgniter 4 & 5 Slice engine.
 
 Works with Sublime Text 3.

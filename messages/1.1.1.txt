@@ -1,4 +1,4 @@
-Blade Highlighter for Laravel 4
+Slice Highlighter for CodeIgniter 4
 
 - Added -
 @overwrite
