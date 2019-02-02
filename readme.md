@@ -1,6 +1,6 @@
 ## CodeIgniter Slice Highlighter
 
-This package adds syntax definitions for the [CodeIgniter 4 & 5](http://www.codeigniter.com) Slice engine.
+This package adds syntax definitions for the [CodeIgniter 4 & 5](http://www.codeigniter.com) Slice engine(https://github.com/GustMartins/Slice-Library).
 
 *Works with Sublime Text 3, for older versions use an older release.*
 
